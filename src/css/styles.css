@@ -5,14 +5,24 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/base.css');
+@import url('./common/common.css');
+@import url('./common/animations.css');
+
+/* Components style */
+@import url('./components/logo.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/socials.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/about.css');
+@import url('./sections/prices.css');
+@import url('./sections/banner.css');
+@import url('./sections/teachers.css');
+@import url('./sections/application.css');
+@import url('./sections/feedback.css');
+@import url('./sections/footer.css');

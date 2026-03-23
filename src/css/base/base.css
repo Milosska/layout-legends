@@ -1,0 +1,25 @@
+body {
+  background-color: var(--white);
+
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--shadow-grey);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.17;
+  color: var(--white);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
