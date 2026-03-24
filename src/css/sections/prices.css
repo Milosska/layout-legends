@@ -1,3 +1,143 @@
+/* ===== Section ===== */
 .prices {
-  /* CSS for prices section goes here */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* ===== Title block ===== */
+.prices-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.prices-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.prices-subtitle {
+  max-width: 665px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+/* ===== Cards list ===== */
+.prices-list {
+  --indent-x: 32px;
+  --indent-y: 20px;
+  --items: 3;
+}
+
+/* ===== Card ===== */
+.prices-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 32px;
+  background-color: var(--white);
+  border: 1px solid var(--green);
+  border-radius: 30px;
+}
+
+.prices-card--accent {
+  background-color: var(--green);
+  border-color: transparent;
+}
+
+/* ===== Badge / Label ===== */
+.prices-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.prices-card--accent .prices-label {
+  color: var(--white);
+}
+
+/* ===== Price ===== */
+.prices-price {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.prices-card--accent .prices-price {
+  color: var(--white);
+}
+
+/* ===== Description ===== */
+.prices-desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.prices-card--accent .prices-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Button ===== */
+.prices-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 16px 39px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white);
+  background-color: var(--green);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: background-color var(--transition-hover),
+    color var(--transition-hover);
+}
+
+.prices-btn:hover,
+.prices-btn:focus {
+  background-color: var(--bright-green);
+}
+
+.prices-btn--accent {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.prices-btn--accent:hover,
+.prices-btn--accent:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Responsive: Tablet ===== */
+@media only screen and (min-width: 768px) {
+  /* Tablet overrides will go here */
+}
+
+/* ===== Responsive: Desktop ===== */
+@media only screen and (min-width: 1280px) {
+  /* Desktop values are the defaults above */
 }
