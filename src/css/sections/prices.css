@@ -1,56 +1,39 @@
-/* ===== Section ===== */
-.prices {
-  padding-top: 64px;
-  padding-bottom: 64px;
+/* ===== Title accent ===== */
+.prices-title-accent {
+  position: relative;
 }
 
-/* ===== Title block ===== */
-.prices-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 64px;
-}
-
-.prices-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--black);
-}
-
-.prices-subtitle {
-  max-width: 665px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  text-align: center;
-  color: rgba(18, 20, 23, 0.5);
-}
-
-/* ===== Cards list ===== */
-.prices-list {
-  --indent-x: 32px;
-  --indent-y: 20px;
-  --items: 3;
+.prices-title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 144px;
+  height: 20px;
+  background-color: var(--accent-green);
+  border-radius: 8px;
+  z-index: -1;
 }
 
 /* ===== Card ===== */
-.prices-card {
+.prices-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  padding: 32px;
+  padding: 40px 20px;
   background-color: var(--white);
   border: 1px solid var(--green);
-  border-radius: 30px;
+  border-radius: 16px;
 }
 
-.prices-card--accent {
+@media only screen and (min-width: 768px) {
+  .prices-item {
+    padding: 32px 16px;
+    border-radius: 30px;
+  }
+}
+
+.prices-item--accent {
   background-color: var(--green);
   border-color: transparent;
 }
@@ -61,83 +44,78 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  text-align: center;
   color: var(--black);
+  margin-bottom: 16px;
 }
 
-.prices-card--accent .prices-label {
+.prices-item--accent .prices-label {
   color: var(--white);
 }
 
 /* ===== Price ===== */
 .prices-price {
-  margin-top: 16px;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.375;
   letter-spacing: -0.02em;
-  text-align: center;
   color: var(--black);
+  margin-bottom: 16px;
 }
 
-.prices-card--accent .prices-price {
+.prices-item--accent .prices-price {
   color: var(--white);
 }
 
 /* ===== Description ===== */
 .prices-desc {
-  margin-top: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: rgba(18, 20, 23, 0.5);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 32px;
 }
 
-.prices-card--accent .prices-desc {
+@media only screen and (min-width: 768px) {
+  .prices-desc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.prices-item--accent .prices-desc {
   color: rgba(255, 255, 255, 0.7);
 }
 
 /* ===== Button ===== */
 .prices-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   margin-top: auto;
-  padding: 16px 39px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--white);
-  background-color: var(--green);
-  border: 1px solid transparent;
-  border-radius: 12px;
-  transition: background-color var(--transition-hover),
-    color var(--transition-hover);
+  min-width: 0;
+  padding: 14px 78px;
+  font-size: 14px;
+  line-height: 1.71;
+  white-space: nowrap;
 }
 
-.prices-btn:hover,
-.prices-btn:focus {
-  background-color: var(--bright-green);
+@media only screen and (min-width: 768px) {
+  .prices-btn {
+    padding: 16px 63px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .prices-btn {
+    padding: 16px 39px;
+  }
 }
 
 .prices-btn--accent {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.4);
-  color: var(--white);
 }
 
-.prices-btn--accent:hover,
-.prices-btn--accent:focus {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* ===== Responsive: Tablet ===== */
-@media only screen and (min-width: 768px) {
-  /* Tablet overrides will go here */
-}
-
-/* ===== Responsive: Desktop ===== */
-@media only screen and (min-width: 1280px) {
-  /* Desktop values are the defaults above */
+@media (hover: hover) {
+  .prices-btn--accent:hover,
+  .prices-btn--accent:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }
