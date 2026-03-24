@@ -68,7 +68,8 @@
 .link-button {
   display: inline-block;
   min-width: 255px;
-  padding: 14px 67px;
+  padding: 14px 58px;
+  white-space: nowrap;
 
   background-color: var(--green);
   border: 1px solid transparent;
