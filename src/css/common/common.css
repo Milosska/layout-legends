@@ -63,3 +63,64 @@
     (100% - (var(--indent-x) * (var(--items) - 1))) / var(--items)
   );
 }
+
+/* Link button styles */
+.link-button {
+  display: inline-block;
+  min-width: 255px;
+  padding: 14px 67px;
+
+  background-color: var(--green);
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+
+  transform: scale(1);
+
+  transition: var(--transition-hover);
+  transition-property: background-color, transform;
+}
+
+.link-button-reverse {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+
+  transition: var(--transition-hover);
+  transition-property: background-color, color, border, transform;
+}
+
+@media (hover: hover) {
+  .link-button:hover,
+  .link-button:focus {
+    background-color: var(--bright-green);
+  }
+
+  .link-button-reverse:hover,
+  .link-button-reverse:focus {
+    background-color: var(--white);
+    color: var(--green);
+    border: 1px solid transparent;
+  }
+}
+
+@media not (hover: hover) {
+  .link-button:active {
+    transform: scale(0.95);
+  }
+
+  .link-button-reverse:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (min-width: 768px) {
+  .link-button {
+    min-width: 306px;
+    padding: 14px 64px;
+  }
+}
