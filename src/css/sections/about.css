@@ -1,3 +1,126 @@
-.about {
-  /* CSS for about section goes here */
+/* Heading accent */
+.about-title-accent {
+  position: relative;
+}
+
+.about-title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 39px;
+  height: 12px;
+  background-color: var(--accent-green);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* Wrapper */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+/* Features list */
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: about-counter;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-title-accent::after {
+    width: 52px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-title-accent::after {
+    width: 62px;
+    height: 20px;
+  }
+}
+
+/* Feature item */
+.about-item {
+  counter-increment: about-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background-color: var(--gray);
+  border-radius: 16px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    border-radius: 30px;
+  }
+}
+
+.about-item::before {
+  content: counter(about-counter, decimal-leading-zero);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--green);
+}
+
+.about-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+/* Image box */
+.about-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 313px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--green);
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-image-box {
+    height: 243px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-image-box {
+    width: 310px;
+    height: 352px;
+  }
+}
+
+.about-image-box img {
+  max-width: 254px;
 }
