@@ -1,11 +1,12 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  z-index: 10;
+  z-index: 50;
+  background-color: var(--white);
 }
 
 .header-container {
@@ -53,6 +54,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .burger-icon {
     width: 32px;
     height: 32px;
@@ -123,7 +129,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--black); /* Початковий колір */
+    color: var(--black);
     transition: border-color var(--transition-hover), color var(--transition-hover);
   }
 
@@ -142,5 +148,7 @@
     align-items: center;
     justify-content: center;
     color: inherit;
+    width: 100%;
+    height: 100%;
   }
 }
