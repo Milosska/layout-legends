@@ -20,6 +20,41 @@
   }
 }
 
+/* Section shared styles */
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.section-header {
+  margin-bottom: 16px;
+}
+
+.section-subheader {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-subheader {
+    max-width: 665px;
+    margin: 0 auto 64px;
+  }
+}
+
 /* Visually hidden */
 .visually-hidden {
   position: absolute;
@@ -59,6 +94,8 @@
 }
 
 .card-set-item {
+  /* Override default min-width: auto so flex items can shrink below content size */
+  min-width: 0;
   flex-basis: calc(
     (100% - (var(--indent-x) * (var(--items) - 1))) / var(--items)
   );
