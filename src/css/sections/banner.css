@@ -54,10 +54,6 @@
   }
 }
 
-.banner-title-accent {
-  color: var(--accent-green);
-}
-
 .banner-subtitle {
   margin: 0 0 16px;
   font-weight: 700;
