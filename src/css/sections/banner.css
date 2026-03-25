@@ -4,7 +4,7 @@
   }
 }
 
-.banner__inner {
+.banner-inner {
   padding: 40px 20px;
   border-radius: 16px;
   background: linear-gradient(
@@ -16,19 +16,19 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__inner {
+  .banner-inner {
     border-radius: 30px;
     padding: 64px 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__inner {
+  .banner-inner {
     padding: 64px 64px;
   }
 }
 
-.banner__title {
+.banner-title {
   margin: 0 0 40px;
   max-width: 295px;
   font-weight: 700;
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__title {
+  .banner-title {
     max-width: 640px;
     margin-bottom: 32px;
     font-size: 60px;
@@ -48,17 +48,17 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__title {
+  .banner-title {
     max-width: 776px;
     margin-bottom: 72px;
   }
 }
 
-.banner__title-accent {
+.banner-title-accent {
   color: var(--accent-green);
 }
 
-.banner__subtitle {
+.banner-subtitle {
   margin: 0 0 16px;
   font-weight: 700;
   font-size: 20px;
@@ -69,7 +69,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__subtitle {
+  .banner-subtitle {
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -77,34 +77,34 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__subtitle {
+  .banner-subtitle {
     margin-bottom: 42px;
   }
 }
 
-.banner__list {
+.banner-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.banner__list-item:not(:last-child) {
+.banner-list-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.banner__list-item {
+.banner-list-item {
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__list-item {
+  .banner-list-item {
     gap: 16px;
   }
 }
 
-.banner__badge {
+.banner-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -116,26 +116,26 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__badge {
+  .banner-badge {
     width: 28px;
     height: 28px;
   }
 }
 
-.banner__icon {
+.banner-icon {
   display: block;
   width: 12px;
   height: 12px;
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__icon {
+  .banner-icon {
     width: 20px;
     height: 20px;
   }
 }
 
-.banner__text {
+.banner-text {
   text-align: left;
   color: var(--black);
   font-weight: 700;
@@ -145,14 +145,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__text {
+  .banner-text {
     flex: 1;
     min-width: 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__text {
+  .banner-text {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -160,7 +160,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__advantages {
+  .banner-advantages {
     display: flex;
     flex-direction: column;
     align-self: start;
@@ -169,24 +169,24 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__advantages {
+  .banner-advantages {
     margin-right: 92px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__card-content {
+  .banner-card-content {
     display: flex;
     align-items: center;
   }
 }
 
-.banner__cta {
+.banner-cta {
   margin-top: 20px;
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__cta {
+  .banner-cta {
     width: 100%;
     min-width: 0;
     padding-right: 24px;
@@ -196,7 +196,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__cta {
+  .banner-cta {
     margin-top: 32px;
     width: 306px;
     min-width: 306px;
@@ -207,23 +207,23 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__cta {
+  .banner-cta {
     margin-top: 40px;
   }
 }
 
-.banner__card {
+.banner-card {
   position: absolute;
   border-radius: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__card {
+  .banner-card {
     border-radius: 30px;
   }
 }
 
-.banner__card--first {
+.banner-card--first {
   left: 50%;
   top: 5%;
   width: 295px;
@@ -233,14 +233,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__card--first {
+  .banner-card--first {
     width: 100%;
     max-width: 295px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__card--first {
+  .banner-card--first {
     left: 50%;
     top: 10%;
     width: 668px;
@@ -251,7 +251,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__card--first {
+  .banner-card--first {
     top: 15%;
     width: 1011px;
     height: 402px;
@@ -260,7 +260,7 @@
   }
 }
 
-.banner__card--second {
+.banner-card--second {
   left: 50%;
   top: 5%;
   width: 295px;
@@ -270,14 +270,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__card--second {
+  .banner-card--second {
     width: 100%;
     max-width: 295px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__card--second {
+  .banner-card--second {
     left: 50%;
     top: 10%;
     width: 668px;
@@ -288,7 +288,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__card--second {
+  .banner-card--second {
     top: 10%;
     width: 1050px;
     height: 463px;
@@ -297,7 +297,7 @@
   }
 }
 
-.banner__card--third {
+.banner-card--third {
   left: 50%;
   top: 25px;
   width: 295px;
@@ -308,14 +308,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__card--third {
+  .banner-card--third {
     width: 100%;
     max-width: 295px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__card--third {
+  .banner-card--third {
     left: 38px;
     top: 51px;
     width: 668px;
@@ -326,7 +326,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__card--third {
+  .banner-card--third {
     left: 50px;
     top: 61px;
     width: 1024px;
@@ -335,7 +335,7 @@
   }
 }
 
-.banner__cards {
+.banner-cards {
   position: relative;
   left: -35px;
   width: 367px;
@@ -343,7 +343,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .banner__cards {
+  .banner-cards {
     left: 0;
     width: 100%;
     max-width: 367px;
@@ -352,7 +352,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__cards {
+  .banner-cards {
     left: -52px;
     width: 754px;
     height: 614px;
@@ -361,7 +361,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__cards {
+  .banner-cards {
     left: -50px;
     width: 1104px;
     height: 604px;
@@ -369,12 +369,12 @@
   }
 }
 
-.banner__image {
+.banner-image {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__image {
+  .banner-image {
     display: block;
     position: absolute;
     top: 174px;
@@ -385,7 +385,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner__image {
+  .banner-image {
     top: 129px;
     right: 0;
   }
