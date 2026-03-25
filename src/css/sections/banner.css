@@ -19,6 +19,7 @@
   .banner-inner {
     border-radius: 30px;
     padding: 64px 32px;
+    overflow: visible;
   }
 }
 
