@@ -1,10 +1,12 @@
 .hero {
   position: relative;
-  width: 90%;
-  max-width: 335px;
+  display: flex;
+  align-items: flex-end;
+
+  width: calc(100% - 40px);
+  height: calc(100vh - 100px);
   margin: 0 auto;
-  /* side padding comes from container */
-  padding: 425px 0 72px;
+  padding: 0 20px;
 
   background-color: var(--shadow-grey);
   background-image:
@@ -36,10 +38,17 @@
   }
 }
 
+@media (min-width: 375px) {
+  .hero {
+    max-width: 335px;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     max-width: 704px;
-    padding: 260px 0 295px;
+    padding: 0 32px;
+    align-items: center;
 
     background-image:
       linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
@@ -72,7 +81,7 @@
 @media (min-width: 1280px) {
   .hero {
     max-width: 1152px;
-    padding: 164px 64px 163px;
+    padding: 0 64px;
 
     background-image:
       linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
@@ -98,10 +107,16 @@
         );
     }
   }
+}
 
-  /* Sets specific padding for hero container */
+.hero-container {
+  padding: 0;
+  margin: 0 auto 72px;
+}
+
+@media (min-width: 768px) {
   .hero-container {
-    padding: 0;
+    margin: 0;
   }
 }
 
@@ -125,7 +140,6 @@
 
 .hero-application-link {
   min-width: 240px;
-  margin: 0 auto;
 }
 
 @media (min-width: 769px) {
