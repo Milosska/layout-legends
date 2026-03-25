@@ -1,3 +1,41 @@
-<div class="mobile-menu">
-  <!-- Mobile menu content goes here -->
+<div class="mobile-menu-wrapper js-menu-container" data-menu>
+  <div class="menu-overlay js-close-menu" data-menu-close></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <button type="button" class="menu-close-btn js-close-menu" data-menu-close>
+        <svg class="close-icon">
+          <use href="./img/sprite.svg#close-btn"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link js-close-menu" data-menu-close>About us</a></li>
+          <li><a href="#lessons" class="mobile-nav-link js-close-menu" data-menu-close>Our courses</a></li>
+          <li><a href="#teachers" class="mobile-nav-link js-close-menu" data-menu-close>Teachers</a></li>
+          <li><a href="#reviews" class="mobile-nav-link js-close-menu" data-menu-close>Testimonials</a></li>
+          <li><a href="#footer" class="mobile-nav-link js-close-menu" data-menu-close>Contact us</a></li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-socials">
+        <li class="social-item">
+          <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="20" height="20"><use href="./img/sprite.svg#facebook"></use></svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="20" height="20"><use href="./img/sprite.svg#instagram"></use></svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="20" height="20"><use href="./img/sprite.svg#youtube"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

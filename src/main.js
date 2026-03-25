@@ -9,16 +9,21 @@ const toggleModal = modal => {
 };
 
 const handleWindowOpen = ({
-  btnOpenSelector,
-  btnCloseSelector,
-  backdropSelector,
-}) => {
+                            btnOpenSelector,
+                            btnCloseSelector,
+                            backdropSelector,
+                          }) => {
   const openModalBtn = document.querySelector(`[${btnOpenSelector}]`);
-  const closeModalBtn = document.querySelector(`[${btnCloseSelector}]`);
+  const closeModalBtns = document.querySelectorAll(`[${btnCloseSelector}]`);
   const modal = document.querySelector(`[${backdropSelector}]`);
 
-  openModalBtn.addEventListener('click', () => toggleModal(modal));
-  closeModalBtn.addEventListener('click', () => toggleModal(modal));
+  if (openModalBtn) {
+    openModalBtn.addEventListener('click', () => toggleModal(modal));
+  }
+
+  closeModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => toggleModal(modal));
+  });
 };
 
 handleWindowOpen({

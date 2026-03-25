@@ -1,3 +1,154 @@
 .header {
-/* CSS for header goes here */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 50;
+  background-color: var(--white);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.logo-accent {
+  color: var(--green);
+}
+
+.header-nav,
+.header-socials {
+  display: none;
+}
+
+.menu-open-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  stroke: var(--black);
+  transition: stroke var(--transition-hover);
+}
+
+.burger-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  stroke: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .burger-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-nav,
+  .header-socials {
+    display: flex;
+  }
+
+  .header-right-part {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 28px;
+  }
+
+  .nav-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+    transition: color var(--transition-hover);
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--green);
+    transform: scaleX(0);
+    transition: transform var(--transition-hover);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--green);
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .header-socials {
+    display: flex;
+    gap: 8px;
+    margin-left: 40px;
+  }
+
+  .social-item {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    transition: border-color var(--transition-hover), color var(--transition-hover);
+  }
+
+  .social-item svg {
+    fill: currentColor;
+  }
+
+  .social-item:hover,
+  .social-item:focus-within {
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  }
 }
