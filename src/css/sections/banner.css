@@ -33,14 +33,8 @@
   text-align: left;
 }
 
-.banner__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.banner__list-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .banner__list-item {
