@@ -1,6 +1,5 @@
 /* Container styles */
 .container {
-  min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
@@ -105,7 +104,8 @@
 .link-button {
   display: inline-block;
   min-width: 255px;
-  padding: 14px 67px;
+  padding: 14px 58px;
+  white-space: nowrap;
 
   background-color: var(--green);
   border: 1px solid transparent;
@@ -160,4 +160,9 @@
     min-width: 306px;
     padding: 14px 64px;
   }
+}
+
+/* White headers accent text styles */
+.accent {
+  color: var(--accent-green);
 }
