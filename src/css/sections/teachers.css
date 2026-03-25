@@ -1,3 +1,88 @@
-.teachers {
-  /* CSS for teachers section goes here */
+/* Section header */
+.teachers-highlight {
+  position: relative;
+}
+
+.teachers-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #BEE8CC;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* Subheader */
+.teachers-subheader {
+  max-width: 334px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-subheader {
+    max-width: 709px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-subheader {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+/* Override card-set */
+@media only screen and (min-width: 1280px) {
+  .teachers-list {
+    --items: 4;
+  }
+}
+
+/* Card */
+.teachers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  transition: transform var(--transition-hover);
+}
+
+@media (hover: hover) {
+  .teachers-item:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Image */
+.teachers-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Name */
+.teachers-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+/* Description */
+.teachers-desc {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--shadow-grey);
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-desc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
