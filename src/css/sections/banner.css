@@ -127,6 +127,35 @@
   display: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .banner__text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .banner__cta {
+    width: 100%;
+    min-width: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    white-space: normal;
+  }
+
+  .banner__card--first,
+  .banner__card--second,
+  .banner__card--third {
+    width: 100%;
+    max-width: 295px;
+  }
+
+  .banner__cards {
+    left: 0;
+    width: 100%;
+    max-width: 367px;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .banner__inner {
     border-radius: 30px;
@@ -181,6 +210,10 @@
   .banner__cta {
     margin-top: 32px;
     width: 306px;
+    min-width: 306px;
+    padding-right: 64px;
+    padding-left: 64px;
+    white-space: nowrap;
   }
 
   .banner__cards {
