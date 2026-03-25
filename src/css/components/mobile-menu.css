@@ -92,47 +92,6 @@
   color: var(--white);
 }
 
-.mobile-socials {
-  display: flex;
-  gap: 12px;
-  margin-top: auto;
-  justify-content: center;
-}
-
-.mobile-socials .social-item {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  transition: border-color var(--transition-hover), color var(--transition-hover), background-color var(--transition-hover);
-}
-
-/* Виправлення: центрування іконки всередині посилання */
-.mobile-socials .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  color: inherit;
-}
-
-.mobile-socials .social-item svg {
-  fill: currentColor;
-}
-
-@media (hover: hover) {
-  .mobile-socials .social-item:hover {
-    border-color: var(--white);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .mobile-menu {
     width: 50%;
