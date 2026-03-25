@@ -369,12 +369,12 @@
   }
 }
 
-.banner-image {
+.banner-picture {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .banner-image {
+  .banner-picture {
     display: block;
     position: absolute;
     top: 174px;
@@ -385,8 +385,14 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner-image {
+  .banner-picture {
     top: 129px;
     right: 0;
   }
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
