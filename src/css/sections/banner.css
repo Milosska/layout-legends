@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1280px) {
+  .banner .container {
+    padding: 0 64px;
+  }
+}
+
 .banner__inner {
   padding: 40px 20px;
   border-radius: 16px;
@@ -9,6 +15,19 @@
   overflow: hidden;
 }
 
+@media only screen and (min-width: 768px) {
+  .banner__inner {
+    border-radius: 30px;
+    padding: 64px 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__inner {
+    padding: 64px 64px;
+  }
+}
+
 .banner__title {
   margin: 0 0 40px;
   max-width: 295px;
@@ -17,6 +36,22 @@
   line-height: 1.05;
   color: var(--white);
   text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__title {
+    max-width: 640px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__title {
+    max-width: 776px;
+    margin-bottom: 72px;
+  }
 }
 
 .banner__title-accent {
@@ -33,6 +68,26 @@
   text-align: left;
 }
 
+@media only screen and (min-width: 768px) {
+  .banner__subtitle {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__subtitle {
+    margin-bottom: 42px;
+  }
+}
+
+.banner__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .banner__list-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -43,17 +98,28 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .banner__list-item {
+    gap: 16px;
+  }
+}
+
 .banner__badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-
   background-color: var(--green);
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__badge {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .banner__icon {
@@ -62,23 +128,99 @@
   height: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+  .banner__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .banner__text {
   text-align: left;
   color: var(--black);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.02em;
 }
 
+@media only screen and (max-width: 767px) {
+  .banner__text {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__text {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__advantages {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-right: 187px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__advantages {
+    margin-right: 92px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__card-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .banner__cta {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner__cta {
+    width: 100%;
+    min-width: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__cta {
+    margin-top: 32px;
+    width: 306px;
+    min-width: 306px;
+    padding-right: 64px;
+    padding-left: 64px;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__cta {
+    margin-top: 40px;
+  }
 }
 
 .banner__card {
   position: absolute;
   border-radius: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__card {
+    border-radius: 30px;
+  }
 }
 
 .banner__card--first {
@@ -90,6 +232,34 @@
   transform: translateX(-50%) rotate(-9deg);
 }
 
+@media only screen and (max-width: 767px) {
+  .banner__card--first {
+    width: 100%;
+    max-width: 295px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__card--first {
+    left: 50%;
+    top: 10%;
+    width: 668px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%) rotate(10.65deg);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__card--first {
+    top: 15%;
+    width: 1011px;
+    height: 402px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%) rotate(11deg);
+  }
+}
+
 .banner__card--second {
   left: 50%;
   top: 5%;
@@ -99,15 +269,70 @@
   transform: translateX(-50%) rotate(11deg);
 }
 
+@media only screen and (max-width: 767px) {
+  .banner__card--second {
+    width: 100%;
+    max-width: 295px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__card--second {
+    left: 50%;
+    top: 10%;
+    width: 668px;
+    height: 500px;
+    background-color: var(--light-green);
+    transform: translateX(-50%) rotate(-9.86deg);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__card--second {
+    top: 10%;
+    width: 1050px;
+    height: 463px;
+    background-color: var(--light-green);
+    transform: translateX(-50%) rotate(-8deg);
+  }
+}
+
 .banner__card--third {
   left: 50%;
   top: 25px;
   width: 295px;
+  padding: 40px 20px;
   background-color: var(--white);
   transform: translateX(-50%);
   z-index: 2;
+}
 
-  padding: 40px 20px;
+@media only screen and (max-width: 767px) {
+  .banner__card--third {
+    width: 100%;
+    max-width: 295px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__card--third {
+    left: 38px;
+    top: 51px;
+    width: 668px;
+    height: 500px;
+    padding: 64px 32px;
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner__card--third {
+    left: 50px;
+    top: 61px;
+    width: 1024px;
+    height: 471px;
+    padding: 65px 64px;
+  }
 }
 
 .banner__cards {
@@ -117,31 +342,7 @@
   height: 456px;
 }
 
-.banner__image {
-  display: none;
-}
-
 @media only screen and (max-width: 767px) {
-  .banner__text {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .banner__cta {
-    width: 100%;
-    min-width: 0;
-    padding-right: 24px;
-    padding-left: 24px;
-    white-space: normal;
-  }
-
-  .banner__card--first,
-  .banner__card--second,
-  .banner__card--third {
-    width: 100%;
-    max-width: 295px;
-  }
-
   .banner__cards {
     left: 0;
     width: 100%;
@@ -151,172 +352,41 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner__inner {
-    border-radius: 30px;
-    padding: 64px 32px;
-  }
-
-  .banner__title {
-    max-width: 640px;
-    font-size: 60px;
-    line-height: 1.17;
-    margin-bottom: 32px;
-  }
-
-  .banner__subtitle {
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-
-  .banner__list-item {
-    gap: 16px;
-  }
-
-  .banner__badge {
-    width: 28px;
-    height: 28px;
-  }
-
-  .banner__icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .banner__text {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-
-  .banner__advantages {
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-    margin-right: 187px;
-  }
-
-  .banner__card-content {
-    display: flex;
-    align-items: center;
-  }
-
-  .banner__cta {
-    margin-top: 32px;
-    width: 306px;
-    min-width: 306px;
-    padding-right: 64px;
-    padding-left: 64px;
-    white-space: nowrap;
-  }
-
   .banner__cards {
     left: -52px;
     width: 754px;
     height: 614px;
     margin-top: 32px;
   }
-
-  .banner__card {
-    border-radius: 30px;
-  }
-
-  .banner__card--first {
-    left: 50%;
-    top: 10%;
-    width: 668px;
-    height: 500px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: translateX(-50%) rotate(10.65deg);
-  }
-
-  .banner__card--second {
-    left: 50%;
-    top: 10%;
-    width: 668px;
-    height: 500px;
-    background-color: var(--light-green);
-    transform: translateX(-50%) rotate(-9.86deg);
-  }
-
-  .banner__card--third {
-    left: 38px;
-    top: 51px;
-    width: 668px;
-    height: 500px;
-    transform: none;
-    padding: 64px 32px;
-  }
-
-  .banner__image {
-    display: block;
-    position: absolute;
-    width: 214px;
-    height: auto;
-    top: 174px;
-    right: -49px;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
-  .banner .container {
-    padding: 0 64px;
-  }
-
-  .banner__inner {
-    padding: 64px 64px;
-  }
-
-  .banner__title {
-    max-width: 776px;
-    margin-bottom: 72px;
-  }
-
-  .banner__subtitle {
-    margin-bottom: 42px;
-  }
-
   .banner__cards {
     left: -50px;
     width: 1104px;
     height: 604px;
     margin-top: 0;
   }
+}
 
-  .banner__advantages {
-    margin-right: 92px;
+.banner__image {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner__image {
+    display: block;
+    position: absolute;
+    top: 174px;
+    right: -49px;
+    width: 214px;
+    height: auto;
   }
+}
 
-  .banner__card--first {
-    top: 15%;
-    width: 1011px;
-    height: 402px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: translateX(-50%) rotate(11deg);
-  }
-
-  .banner__card--second {
-    top: 10%;
-    width: 1050px;
-    height: 463px;
-    background-color: var(--light-green);
-    transform: translateX(-50%) rotate(-8deg);
-  }
-
-  .banner__card--third {
-    left: 50px;
-    top: 61px;
-    width: 1024px;
-    height: 471px;
-    padding: 65px 64px;
-  }
-
+@media only screen and (min-width: 1280px) {
   .banner__image {
     top: 129px;
     right: 0;
-  }
-
-  .banner__cta {
-    margin-top: 40px;
   }
 }
