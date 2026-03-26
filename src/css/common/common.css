@@ -45,12 +45,14 @@
 
 .section-subheader {
   margin-bottom: 40px;
+  font-size: var(--font-size-14);
 }
 
 @media only screen and (min-width: 768px) {
   .section-subheader {
     max-width: 665px;
     margin: 0 auto 64px;
+    font-size: var(--font-size-18);
   }
 }
 
