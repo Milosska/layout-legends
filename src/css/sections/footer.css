@@ -1,3 +1,139 @@
 .footer {
-/* CSS for footer goes here */
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 0 0;
+}
+
+
+
+.footer-container {
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-contacts .logo {
+    color: var(--white);
+    text-align: left;
+}
+
+.footer-contacts address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.footer-text-style {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -.28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-link {
+    letter-spacing: 0;
+    color: var(--white);
+}
+
+.footer-address-link:hover {
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--green);
+    text-decoration-style: solid;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-nav-list li .footer-nav-link {
+    letter-spacing: 0;
+    font-weight: 600;
+    color: var(--white);
+    position: relative;
+}
+.footer-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width:0;
+    height: 2px;
+    background-color: var(--green);
+    transition: width var(--transition-hover);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--green);
+}
+
+.footer-nav-link:hover::after {
+    width: 37px;
+}
+.footer-container .socials {
+    margin-top: 0;
+    margin-left: 0;
+    justify-content: flex-start;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+    gap:14px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.footer-bottom-text {
+    width: 100%;
+    text-align: left;
+}
+
+.footer-bottom-text {
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 32px 0 0;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        padding: 16px 0;
+        margin-top: 110px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        padding: 64px 0 0;
+    }
+    .footer-bottom {
+        padding: 20px 0;
+        margin-top: 64px;
+    }
 }
