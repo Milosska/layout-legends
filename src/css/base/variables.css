@@ -25,4 +25,23 @@
 
   /* Animation */
   --transition-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Border radius */
+  --border-radius-30: 30px;
+  --border-radius-16: 16px;
+  --border-radius-15: 15px;
+  --border-radius-8: 8px;
+
+  /* Font sizes */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+
+  /* Font weights */
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
 }

@@ -1,3 +1,99 @@
-.feedback {
-  /* CSS for feedback section goes here */
+/* ===== Title accent ===== */
+.feedback-title-accent {
+  position: relative;
+}
+
+.feedback-title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 20px;
+  background-color: var(--accent-green);
+  border-radius: var(--border-radius-8);
+  z-index: -1;
+}
+
+/* ===== Card visibility ===== */
+.feedback-card:nth-child(n + 2) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback-card:nth-child(n + 2) {
+    display: block;
+  }
+
+  .feedback-card:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .feedback-card:nth-child(n + 3) {
+    display: block;
+  }
+}
+
+/* ===== Card ===== */
+.feedback-card {
+  background: var(--gray);
+  border-radius: var(--border-radius-16);
+  padding: 32px 16px 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback-card {
+    border-radius: var(--border-radius-30);
+  }
+}
+
+/* ===== Student info ===== */
+.feedback-student {
+  height: 72px;
+  background: var(--green);
+  border-radius: var(--border-radius-8);
+  padding: 14px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback-student {
+    border-radius: var(--border-radius-15);
+  }
+}
+
+.feedback-profile {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+
+.feedback-student-name {
+  color: var(--white);
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-700);
+}
+
+.feedback-student-role {
+  font-size: var(--font-size-12);
+  text-align: start;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+/* ===== Feedback text ===== */
+.feedback-text {
+  padding: 32px 16px 0;
+  text-align: left;
+  font-size: var(--font-size-14);
+  line-height: 1.71;
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback-text {
+    font-size: var(--font-size-16);
+    line-height: 1.5;
+  }
 }
