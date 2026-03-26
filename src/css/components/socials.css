@@ -1,3 +1,89 @@
 .socials {
-  /* CSS for socials component goes here */
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.header-right-part .socials {
+  display: none;
+}
+
+.social-item {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: border-color var(--transition-hover), color var(--transition-hover), background-color var(--transition-hover);
+}
+
+.socials .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.socials .social-item svg {
+  fill: currentColor;
+}
+
+@media (hover: hover) {
+  .social-item:hover {
+    border-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .socials {
+    display: flex;
+    gap: 8px;
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-right-part .socials {
+    display: flex;
+    gap: 8px;
+    margin-left: 40px;
+  }
+
+  .header-right-part .social-item {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    transition: border-color var(--transition-hover), color var(--transition-hover);
+  }
+
+  .header-right-part .social-item svg {
+    fill: currentColor;
+  }
+
+  .header-right-part .social-item:hover,
+  .header-right-part .social-item:focus-within {
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .header-right-part .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  }
 }
