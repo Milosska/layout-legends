@@ -1,3 +1,81 @@
-.teachers {
-  /* CSS for teachers section goes here */
+/* Subheader */
+.teachers-subheader {
+  max-width: 334px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-subheader {
+    max-width: 709px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-subheader {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+/* Override card-set */
+.teachers-list {
+  --indent-y: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-list {
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-list {
+    max-width: 100%;
+    --items: 4;
+  }
+}
+
+/* Card */
+.teachers-item {
+  text-align: center;
+  transition: transform var(--transition-hover);
+}
+
+@media (hover: hover) {
+  .teachers-item:hover {
+    transform: translateY(-30px);
+  }
+}
+
+/* Image */
+.teachers-img {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Name */
+.teachers-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+/* Description */
+.teachers-desc {
+  color: var(--shadow-grey);
 }
