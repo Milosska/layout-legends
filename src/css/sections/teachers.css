@@ -1,20 +1,3 @@
-/* Section header */
-.teachers-highlight {
-  position: relative;
-}
-
-.teachers-highlight::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background: #BEE8CC;
-  border-radius: 8px;
-  z-index: -1;
-}
-
 /* Subheader */
 .teachers-subheader {
   max-width: 334px;
@@ -34,34 +17,52 @@
 }
 
 /* Override card-set */
+.teachers-list {
+  --indent-y: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-list {
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .teachers-list {
+    max-width: 100%;
     --items: 4;
   }
 }
 
 /* Card */
 .teachers-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 16px;
   transition: transform var(--transition-hover);
 }
 
 @media (hover: hover) {
   .teachers-item:hover {
-    transform: translateY(-4px);
+    transform: translateY(-30px);
   }
 }
 
 /* Image */
 .teachers-img {
+  display: block;
+  margin: 0 auto 16px;
   border-radius: 50%;
   width: 160px;
   height: 160px;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* Name */
@@ -71,18 +72,10 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--black);
+  margin-bottom: 16px;
 }
 
 /* Description */
 .teachers-desc {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--shadow-grey);
-}
-
-@media only screen and (min-width: 768px) {
-  .teachers-desc {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
