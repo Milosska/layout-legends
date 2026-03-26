@@ -1,3 +1,95 @@
-.about {
-  /* CSS for about section goes here */
+/* Wrapper */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about-wrapper .card-set {
+    --items: 2;
+  }
+}
+
+/* Features list */
+.about-list {
+  --indent-y: 20px;
+  counter-reset: about-counter;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-list {
+    --indent-y: 32px;
+  }
+}
+
+/* Feature item */
+.about-item {
+  counter-increment: about-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background-color: var(--gray);
+  border-radius: 16px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    border-radius: 30px;
+  }
+}
+
+.about-item::before {
+  content: counter(about-counter, decimal-leading-zero);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--green);
+}
+
+.about-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+/* Image box */
+.about-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 313px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--green);
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-image-box {
+    height: 243px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-image-box {
+    width: 310px;
+    height: 352px;
+  }
+}
+
+.about-image-box img {
+  max-width: 254px;
 }
