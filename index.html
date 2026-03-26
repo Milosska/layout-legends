@@ -30,7 +30,7 @@
 
     <!-- Main CSS -->
     <script type="module" crossorigin src="/layout-legends/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/layout-legends/assets/index-BW8V_fAc.css">
+    <link rel="stylesheet" crossorigin href="/layout-legends/assets/index-Bs-VmBkj.css">
   </head>
   <body>
     <header class="header">
@@ -390,10 +390,89 @@
 </section>
       <section class="application" id="application">
   <div class="container">
-    <!-- Application content goes here -->
+
+    <div class="app-header">
+      <h2 class="app-title">Leave an <span class="accent-color">application</span></h2>
+      <p class="app-subtitle">Please use the form below to contact us. Enter your name, email, and message and
+        we'll get back to you shortly.
+      </p>
+    </div>
+    <div class="app-content">
+      <!-- LEFT -->
+
+      <div class="app-card">
+        <picture>
+          <source srcset="../img/application/webp/girl@1x.webp 1x, ../img/application/webp/girl@2x.webp 2x"
+            type="image/webp">
+
+          <source srcset="../img/application/png/girl@1x.png 1x, ../img/application/png/girl@2x.png 2x"
+            type="image/png">
+
+          <img class="app-image" src="../img/application/png/girl@1x.png" alt="girl learning with laptop" loading="lazy"
+            width="500" height="400">
+        </picture>
+
+        <div class="app-card-content">
+          <p class="app-card-stat">1000</p>
+          <p class="app-card-text">of our online English language lessons! This journey has been full of
+            discovery, growth and unforgettable
+            moments, and
+            we are happy to share this joyful event with you.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+
+      <form class="app-form">
+
+        <input class="app-form-input" type="text" name="username" id="username" placeholder="Name" autofocus required
+          pattern="[A-Za-zА-Яа-яЄєІіЇїҐґ'\s]{2,50}" title="Name must contain 2 to 50 letters" />
+
+        <input class="app-form-input" type="email" name="usermail" id="usermail" placeholder="Email" required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          title="Enter a valid email address, e.g. name@example.com" />
+
+        <input class="app-form-input" type="tel" name="userphone" id="userphone" placeholder="Phone" required
+          pattern="(\+?1[\s\-\.]?)?(\(?\d{3}\)?[\s\-\.]?)?\d{3}[\s\-\.]?\d{2}[\s\-\.]?\d{2}|\+?[1-9]\d{6,14}"
+          title="Enter a valid phone number, e.g. +1 (555) 123-45-67, +380 67 123 4567, 0671234567" />
+
+        <textarea class="app-form-textarea" name="usercomment" id="usercomment" placeholder="Comment"></textarea>
+
+        <div class="form-teachers">
+          <p class="form-teachers-label">Choose a teacher</p>
+          <div class="form-teachers-option">
+            <label class="radio-label">
+              <input type="radio" name="teacher" value="maria" checked />
+              <span class="radio-custom"></span>
+              Maria
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="teacher" value="artem" />
+              <span class="radio-custom"></span>
+              Artem
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="teacher" value="ilona" />
+              <span class="radio-custom"></span>
+              Ilona
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="teacher" value="volodymyr" />
+              <span class="radio-custom"></span>
+              Volodymyr
+            </label>
+          </div>
+        </div>
+
+        <button class="app-form-btn" type="submit">Send</button>
+        <p class="form-privacy">By clicking on “Send” button, you agree to our <a href="#">Privacy Policy</a>,<br
+            class="tablet-break">
+          and allow Promodo to use this information for marketing purposes.</p>
+      </form>
+
+    </div>
   </div>
 </section>
-
       <section class="feedback section" id="feedback">
   <div class="container">
     <h2 class="section-header">
