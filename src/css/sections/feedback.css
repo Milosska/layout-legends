@@ -1,20 +1,3 @@
-/* ===== Title accent ===== */
-.feedback-title-accent {
-  position: relative;
-}
-
-.feedback-title-accent::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  width: 100%;
-  height: 20px;
-  background-color: var(--accent-green);
-  border-radius: var(--border-radius-8);
-  z-index: -1;
-}
-
 /* ===== Card visibility ===== */
 .feedback-card:nth-child(n + 2) {
   display: none;
