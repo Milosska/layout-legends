@@ -1,30 +1,5 @@
-const updateBodyScrollLock = () => {
-  const hasOpenOverlay = document.querySelector('.is-open');
-  document.body.classList.toggle('no-scroll', Boolean(hasOpenOverlay));
-};
-
-const toggleModal = modal => {
-  modal.classList.toggle('is-open');
-  updateBodyScrollLock();
-};
-
-const handleWindowOpen = ({
-                            btnOpenSelector,
-                            btnCloseSelector,
-                            backdropSelector,
-                          }) => {
-  const openModalBtn = document.querySelector(`[${btnOpenSelector}]`);
-  const closeModalBtns = document.querySelectorAll(`[${btnCloseSelector}]`);
-  const modal = document.querySelector(`[${backdropSelector}]`);
-
-  if (openModalBtn) {
-    openModalBtn.addEventListener('click', () => toggleModal(modal));
-  }
-
-  closeModalBtns.forEach(btn => {
-    btn.addEventListener('click', () => toggleModal(modal));
-  });
-};
+import { handleWindowOpen } from './js/toggleModal';
+import { handleScrollToTop } from './js/scrollToTop';
 
 handleWindowOpen({
   btnOpenSelector: 'data-menu-open', // data attribute for the menu open button
@@ -32,19 +7,4 @@ handleWindowOpen({
   backdropSelector: 'data-menu', // data attribute for the menu backdrop
 });
 
-const scrollTopBtn = document.querySelector('.js-scroll-top');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollTopBtn.classList.add('is-shown');
-  } else {
-    scrollTopBtn.classList.remove('is-shown');
-  }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-});
+handleScrollToTop();
