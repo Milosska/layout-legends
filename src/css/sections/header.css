@@ -85,7 +85,7 @@
     position: absolute;
     left: 0;
     bottom: -6px;
-    width:0;
+    width: 0;
     height: 2px;
     background-color: var(--green);
     transition: width var(--transition-hover);
@@ -99,5 +99,4 @@
   .nav-link:hover::after {
     width: 37px;
   }
-
 }
