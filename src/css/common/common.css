@@ -105,7 +105,6 @@
 /* Link button styles */
 .link-button {
   display: inline-block;
-  min-width: 255px;
   padding: 14px 58px;
   white-space: nowrap;
 
@@ -159,7 +158,6 @@
 
 @media (min-width: 768px) {
   .link-button {
-    min-width: 306px;
     padding: 14px 64px;
   }
 }
