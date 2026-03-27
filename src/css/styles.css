@@ -9,12 +9,12 @@
 @import url('./base/variables.css');
 @import url('./base/base.css');
 @import url('./common/common.css');
-@import url('./common/animations.css');
 
 /* Components style */
 @import url('./components/logo.css');
 @import url('./components/mobile-menu.css');
 @import url('./components/socials.css');
+@import url('./components/scroll-btn.css');
 
 /* Sections style */
 @import url('./sections/header.css');

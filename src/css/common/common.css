@@ -24,7 +24,6 @@
   padding-top: var(--header-height);
 }
 
-
 @media only screen and (min-width: 768px) {
   .section {
     padding-top: calc(var(--header-height) + 20px);

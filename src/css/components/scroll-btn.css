@@ -1,4 +1,3 @@
-/* Keyframes go here */
 .scroll-top-btn {
   position: fixed;
   bottom: 20px;
@@ -22,11 +21,12 @@
   visibility: hidden;
   transform: scale(0.8);
 
-  transition: opacity var(--transition-hover),
-  visibility var(--transition-hover),
-  transform var(--transition-hover),
-  background-color var(--transition-hover),
-  color var(--transition-hover);
+  transition:
+    opacity var(--transition-hover),
+    visibility var(--transition-hover),
+    transform var(--transition-hover),
+    background-color var(--transition-hover),
+    color var(--transition-hover);
 }
 
 .scroll-top-btn.is-shown {

@@ -19,7 +19,10 @@
   align-items: center;
   justify-content: center;
   color: var(--white);
-  transition: border-color var(--transition-hover), color var(--transition-hover), background-color var(--transition-hover);
+  transition:
+    border-color var(--transition-hover),
+    color var(--transition-hover),
+    background-color var(--transition-hover);
 }
 
 .socials .social-link {
@@ -65,7 +68,9 @@
     align-items: center;
     justify-content: center;
     color: var(--black);
-    transition: border-color var(--transition-hover), color var(--transition-hover);
+    transition:
+      border-color var(--transition-hover),
+      color var(--transition-hover);
   }
 
   .header-right-part .social-item svg {
