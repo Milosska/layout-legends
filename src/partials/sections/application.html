@@ -35,7 +35,7 @@
 
       <form class="app-form">
 
-        <input class="app-form-input" type="text" name="username" id="username" placeholder="Name" autofocus required
+        <input class="app-form-input" type="text" name="username" id="username" placeholder="Name" required
           pattern="[A-Za-zА-Яа-яЄєІіЇїҐґ'\s]{2,50}" title="Name must contain 2 to 50 letters" />
 
         <input class="app-form-input" type="email" name="usermail" id="usermail" placeholder="Email" required
@@ -46,7 +46,7 @@
           pattern="(\+?1[\s\-\.]?)?(\(?\d{3}\)?[\s\-\.]?)?\d{3}[\s\-\.]?\d{2}[\s\-\.]?\d{2}|\+?[1-9]\d{6,14}"
           title="Enter a valid phone number, e.g. +1 (555) 123-45-67, +380 67 123 4567, 0671234567" />
 
-        <textarea class="app-form-textarea" name="usercomment" id="usercomment" placeholder="Comment"></textarea>
+        <textarea class="app-form-textarea" name="usercomment" id="usercomment" placeholder="Comment" maxlength="500"></textarea>
 
         <div class="form-teachers">
           <p class="form-teachers-label">Choose a teacher</p>
