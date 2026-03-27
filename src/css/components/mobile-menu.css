@@ -34,7 +34,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 60%;
+  width: 64%; /** 240px on mobile devices */
   height: 100%;
   background-color: var(--green);
   transform: translateX(100%);

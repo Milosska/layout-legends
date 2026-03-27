@@ -18,6 +18,11 @@
   --tablet: 768px;
   --desktop: 1280px;
 
+  /** Header height */
+  --header-height: 60px;
+  --header-height-tablet: 72px;
+  --header-height-desktop: 80px;
+
   /* Flex set base settings */
   --items: 1;
   --indent-x: 0;
