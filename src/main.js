@@ -1,5 +1,6 @@
 import { handleWindowOpen } from './js/toggleModal';
 import { handleScrollToTop } from './js/scrollToTop';
+import { handleScrollToFooter } from './js/scrollToFooter';
 
 handleWindowOpen({
   btnOpenSelector: 'data-menu-open', // data attribute for the menu open button
@@ -8,3 +9,4 @@ handleWindowOpen({
 });
 
 handleScrollToTop();
+handleScrollToFooter();
