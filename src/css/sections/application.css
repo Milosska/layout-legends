@@ -161,7 +161,7 @@
   .app-form-textarea {
     width: 100%;
     padding: 16px 18px;
-
+    resize: none;
     min-height: 94px;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 12px;
